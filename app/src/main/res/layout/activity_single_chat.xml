@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".screens.SingleChatActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="2dp"
+        android:background="@android:drawable/edit_text">
+        <TextView
+            android:id="@+id/editTextSearch"
+            android:hint="Search"
+            android:layout_gravity="center"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="10dp"
+            style="@style/modifiedEditText"
+            android:inputType="textAutoComplete"
+            android:maxLines="1"
+
+            />
+
+    </FrameLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/rv_user"
+            />
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="20dp"
+            android:id="@+id/a_c_createGroup"
+            android:src="@android:drawable/ic_input_add"
+            android:background="@drawable/ic_launcher_background"/>
+
+    </RelativeLayout>
+</LinearLayout>

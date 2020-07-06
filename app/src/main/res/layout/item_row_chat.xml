@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="horizontal"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content"
+    android:id="@+id/row_fame"
+    android:layout_marginTop="1dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        style="@style/leftMark"
+        android:visibility="invisible"
+        android:id="@+id/leftLayout">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/lt_sender"
+            android:text="Sender"
+            android:layout_margin="3dp"
+            android:textSize="9sp"
+            android:textColor="@color/whiteCardColor"
+            android:layout_marginBottom="@dimen/activity_vertical_margin"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/lt_message"
+            android:text="Message"
+            android:textSize="14sp"
+            android:textColor="@color/whiteCardColor"
+            android:layout_marginLeft="20sp"
+            android:layout_marginBottom="@dimen/activity_vertical_margin"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        style="@style/rightMark"
+        android:visibility="invisible"
+        android:id="@+id/rightLayout">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rt_sender"
+            android:text="Sender"
+            android:textAlignment="textEnd"
+            android:layout_margin="3dp"
+            android:textSize="9sp"
+            android:textColor="@color/whiteCardColor"
+            android:layout_marginBottom="@dimen/activity_vertical_margin"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rt_message"
+            android:text="Message"
+            android:textSize="14sp"
+            android:textColor="@color/whiteCardColor"
+            android:layout_marginLeft="20sp"
+            android:layout_marginBottom="@dimen/activity_vertical_margin"/>
+
+    </LinearLayout>
+
+</LinearLayout>
